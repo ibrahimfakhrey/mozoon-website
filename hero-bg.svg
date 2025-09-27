@@ -1,0 +1,66 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#02646A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B365D;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#02646A;stop-opacity:0.7" />
+    </linearGradient>
+    <pattern id="cityPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="url(#skyGradient)"/>
+      <rect x="20" y="120" width="30" height="80" fill="url(#buildingGradient)" opacity="0.8"/>
+      <rect x="60" y="100" width="25" height="100" fill="url(#buildingGradient)" opacity="0.7"/>
+      <rect x="95" y="130" width="35" height="70" fill="url(#buildingGradient)" opacity="0.9"/>
+      <rect x="140" y="110" width="28" height="90" fill="url(#buildingGradient)" opacity="0.6"/>
+      <rect x="175" y="125" width="20" height="75" fill="url(#buildingGradient)" opacity="0.8"/>
+      
+      <!-- Windows -->
+      <rect x="25" y="130" width="4" height="6" fill="#D4AF37" opacity="0.8"/>
+      <rect x="32" y="130" width="4" height="6" fill="#D4AF37" opacity="0.6"/>
+      <rect x="25" y="145" width="4" height="6" fill="#D4AF37" opacity="0.7"/>
+      <rect x="32" y="145" width="4" height="6" fill="#D4AF37" opacity="0.9"/>
+      
+      <rect x="65" y="110" width="3" height="5" fill="#D4AF37" opacity="0.7"/>
+      <rect x="72" y="110" width="3" height="5" fill="#D4AF37" opacity="0.8"/>
+      <rect x="65" y="125" width="3" height="5" fill="#D4AF37" opacity="0.6"/>
+      <rect x="72" y="125" width="3" height="5" fill="#D4AF37" opacity="0.9"/>
+      
+      <rect x="100" y="140" width="5" height="7" fill="#D4AF37" opacity="0.8"/>
+      <rect x="110" y="140" width="5" height="7" fill="#D4AF37" opacity="0.7"/>
+      <rect x="120" y="140" width="5" height="7" fill="#D4AF37" opacity="0.6"/>
+      
+      <rect x="145" y="120" width="4" height="6" fill="#D4AF37" opacity="0.9"/>
+      <rect x="152" y="120" width="4" height="6" fill="#D4AF37" opacity="0.7"/>
+      <rect x="145" y="135" width="4" height="6" fill="#D4AF37" opacity="0.8"/>
+      
+      <rect x="178" y="135" width="3" height="5" fill="#D4AF37" opacity="0.8"/>
+      <rect x="185" y="135" width="3" height="5" fill="#D4AF37" opacity="0.6"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1920" height="1080" fill="url(#skyGradient)"/>
+  
+  <!-- City skyline pattern -->
+  <rect width="1920" height="1080" fill="url(#cityPattern)" opacity="0.6"/>
+  
+  <!-- Geometric overlay elements -->
+  <circle cx="300" cy="200" r="80" fill="#D4AF37" opacity="0.1"/>
+  <circle cx="1600" cy="300" r="120" fill="#02646A" opacity="0.08"/>
+  <polygon points="800,150 850,100 900,150 850,200" fill="#1B365D" opacity="0.12"/>
+  <polygon points="1200,400 1280,350 1360,400 1280,450" fill="#D4AF37" opacity="0.08"/>
+  
+  <!-- Abstract building shapes -->
+  <rect x="0" y="800" width="1920" height="280" fill="url(#buildingGradient)" opacity="0.3"/>
+  
+  <!-- Subtle grid overlay -->
+  <defs>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+</svg>

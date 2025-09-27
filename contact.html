@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MOOZEN Facilities Management</title>
+    <meta name="description" content="Get in touch with MOOZEN for all your facilities management needs in Saudi Arabia. Contact us for quotes, consultations, and support.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">Mozoon</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">Ready to transform your facility management? Get in touch with our experts today for a consultation tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We're here to help you with all your facilities management needs. Reach out to us through any of the following channels.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Phone Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p class="contact-detail">+966 11 XXX XXXX</p>
+                        <p class="contact-description">Available 24/7 for emergency support and general inquiries</p>
+                        <a href="tel:+966XXXXXXXX" class="btn btn-outline-primary btn-sm">Call Now</a>
+                    </div>
+                </div>
+
+                <!-- Email Contact -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p class="contact-detail">info@moozen.sa</p>
+                        <p class="contact-description">Send us your requirements and we'll respond within 24 hours</p>
+                        <a href="mailto:info@moozen.sa" class="btn btn-outline-primary btn-sm">Send Email</a>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p class="contact-detail">Riyadh, Saudi Arabia</p>
+                        <p class="contact-description">Our headquarters in the heart of the Kingdom</p>
+                        <a href="#map" class="btn btn-outline-primary btn-sm">View Map</a>
+                    </div>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <p class="contact-detail">+966 5X XXX XXXX</p>
+                        <p class="contact-description">Quick responses for urgent facility management needs</p>
+                        <a href="https://wa.me/966XXXXXXXXX" class="btn btn-outline-primary btn-sm" target="_blank">Chat Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-wrapper">
+                        <div class="row">
+                            <!-- Contact Form -->
+                            <div class="col-lg-8">
+                                <div class="contact-form">
+                                    <h3 class="form-title">Send Us a Message</h3>
+                                    <p class="form-subtitle">Fill out the form below and our team will get back to you within 24 hours.</p>
+                                    
+                                    <form id="contactForm" class="needs-validation" novalidate>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="firstName" class="form-label">First Name *</label>
+                                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your first name.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="lastName" class="form-label">Last Name *</label>
+                                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your last name.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="email" class="form-label">Email Address *</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid email address.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="phone" class="form-label">Phone Number *</label>
+                                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide your phone number.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="company" class="form-label">Company/Organization</label>
+                                                <input type="text" class="form-control" id="company" name="company">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="serviceType" class="form-label">Service Interest *</label>
+                                                <select class="form-select" id="serviceType" name="serviceType" required>
+                                                    <option value="">Select a service</option>
+                                                    <option value="operations">Operation & Maintenance</option>
+                                                    <option value="hospitality">Hospitality Services</option>
+                                                    <option value="cleaning">Cleaning Services</option>
+                                                    <option value="staff">Staff Management</option>
+                                                    <option value="transportation">Transportation & Logistics</option>
+                                                    <option value="consultation">General Consultation</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a service type.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="facilityType" class="form-label">Facility Type</label>
+                                            <select class="form-select" id="facilityType" name="facilityType">
+                                                <option value="">Select facility type</option>
+                                                <option value="government">Government Building</option>
+                                                <option value="corporate">Corporate Office</option>
+                                                <option value="healthcare">Healthcare Facility</option>
+                                                <option value="education">Educational Institution</option>
+                                                <option value="retail">Retail/Commercial</option>
+                                                <option value="industrial">Industrial Facility</option>
+                                                <option value="residential">Residential Complex</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Message *</label>
+                                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Please describe your facility management needs, project scope, timeline, and any specific requirements..." required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please provide details about your requirements.
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                                <label class="form-check-label" for="newsletter">
+                                                    I would like to receive updates about MOOZEN services and industry insights
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                                <label class="form-check-label" for="privacy">
+                                                    I agree to the <a href="#" class="text-decoration-none">Privacy Policy</a> and <a href="#" class="text-decoration-none">Terms of Service</a> *
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    You must agree to our privacy policy.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            <span class="btn-text">Send Message</span>
+                                            <span class="btn-loading d-none">
+                                                <span class="loading"></span> Sending...
+                                            </span>
+                                        </button>
+                                    </form>
+                                    
+                                    <!-- Success Message -->
+                                    <div id="successMessage" class="alert alert-success mt-3 d-none">
+                                        <i class="fas fa-check-circle me-2"></i>
+                                        Thank you for your message! We'll get back to you within 24 hours.
+                                    </div>
+                                    
+                                    <!-- Error Message -->
+                                    <div id="errorMessage" class="alert alert-danger mt-3 d-none">
+                                        <i class="fas fa-exclamation-triangle me-2"></i>
+                                        There was an error sending your message. Please try again or contact us directly.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Information Sidebar -->
+                            <div class="col-lg-4">
+                                <div class="contact-sidebar">
+                                    <h4>Why Choose MOOZEN?</h4>
+                                    
+                                    <div class="sidebar-item">
+                                        <div class="sidebar-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="sidebar-content">
+                                            <h5>24/7 Support</h5>
+                                            <p>Round-the-clock emergency support and maintenance services</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-item">
+                                        <div class="sidebar-icon">
+                                            <i class="fas fa-award"></i>
+                                        </div>
+                                        <div class="sidebar-content">
+                                            <h5>15+ Years Experience</h5>
+                                            <p>Proven track record in facilities management across Saudi Arabia</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-item">
+                                        <div class="sidebar-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="sidebar-content">
+                                            <h5>Expert Team</h5>
+                                            <p>Certified professionals with specialized industry knowledge</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="sidebar-item">
+                                        <div class="sidebar-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <div class="sidebar-content">
+                                            <h5>Quality Assurance</h5>
+                                            <p>ISO certified processes and quality management systems</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-cta">
+                                        <h5>Need Immediate Assistance?</h5>
+                                        <p>For urgent facility management needs, call our emergency hotline:</p>
+                                        <a href="tel:+966XXXXXXXX" class="btn btn-outline-primary w-100">
+                                            <i class="fas fa-phone me-2"></i>Emergency Hotline
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="office-locations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Our Locations</h2>
+                    <p class="section-subtitle">MOOZEN serves clients across Saudi Arabia with strategically located offices and service centers.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Riyadh Office -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>Riyadh Headquarters</h4>
+                            <span class="location-badge">Main Office</span>
+                        </div>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>King Fahd Road, Riyadh 12345, Saudi Arabia</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+966 11 XXX XXXX</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>riyadh@moozen.sa</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Sun-Thu: 8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="location-services">
+                            <h6>Services Available:</h6>
+                            <ul>
+                                <li>All Facility Management Services</li>
+                                <li>Corporate Headquarters</li>
+                                <li>24/7 Emergency Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jeddah Office -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>Jeddah Branch</h4>
+                            <span class="location-badge">Regional Office</span>
+                        </div>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Corniche Road, Jeddah 21455, Saudi Arabia</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+966 12 XXX XXXX</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>jeddah@moozen.sa</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Sun-Thu: 8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="location-services">
+                            <h6>Services Available:</h6>
+                            <ul>
+                                <li>Western Region Operations</li>
+                                <li>Healthcare Facilities</li>
+                                <li>Commercial Buildings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dammam Office -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <div class="location-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h4>Dammam Branch</h4>
+                            <span class="location-badge">Regional Office</span>
+                        </div>
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>King Abdulaziz Road, Dammam 31411, Saudi Arabia</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+966 13 XXX XXXX</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>dammam@moozen.sa</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Sun-Thu: 8:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="location-services">
+                            <h6>Services Available:</h6>
+                            <ul>
+                                <li>Eastern Region Operations</li>
+                                <li>Industrial Facilities</li>
+                                <li>Oil & Gas Sector</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container-fluid p-0">
+            <div class="map-wrapper">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Find Us on the Map</h3>
+                        <p>Interactive map showing all MOOZEN office locations across Saudi Arabia</p>
+                        <button class="btn btn-primary" onclick="loadMap()">Load Interactive Map</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to common questions about our facilities management services.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                    What services does MOOZEN provide?
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    MOOZEN provides comprehensive facilities management services including Operation & Maintenance, Hospitality Services, Cleaning Services, Staff Management, and Transportation & Logistics. We serve various sectors including government, healthcare, education, and corporate facilities.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    How quickly can you respond to service requests?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide 24/7 emergency support with response times of 2-4 hours for urgent issues. For routine maintenance and service requests, we typically respond within 24 hours and schedule services based on priority and client requirements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    Do you provide services outside of major cities?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, while our main offices are in Riyadh, Jeddah, and Dammam, we provide services throughout Saudi Arabia. We have mobile teams and partnerships that allow us to serve clients in smaller cities and remote locations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    What certifications and standards do you follow?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    MOOZEN is ISO 9001:2015 certified for Quality Management, ISO 14001:2015 for Environmental Management, and ISO 45001:2018 for Occupational Health and Safety. We also comply with Saudi Arabian standards and regulations for all our services.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                    How do you ensure quality control?
+                                </button>
+                            </h2>
+                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We implement rigorous quality control measures including regular inspections, client feedback systems, performance metrics tracking, and continuous staff training. Our quality assurance team conducts monthly audits and maintains detailed service reports for all clients.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title">Ready to Get Started?</h2>
+                    <p class="cta-subtitle">Transform your facility management with MOOZEN's expert services. Contact us today for a free consultation and customized solution.</p>
+                    <div class="cta-buttons">
+                        <a href="#contactForm" class="btn btn-primary btn-lg">Request Quote</a>
+                        <a href="tel:+966XXXXXXXX" class="btn btn-outline-light btn-lg">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="logo mozoon.svg" alt="MOOZEN Logo" class="footer-logo">
+                        <p>Leading facilities management company in Saudi Arabia, delivering excellence through innovation, quality, and reliability.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html#operations">Operation & Maintenance</a></li>
+                        <li><a href="services.html#hospitality">Hospitality Services</a></li>
+                        <li><a href="services.html#cleaning">Cleaning Services</a></li>
+                        <li><a href="services.html#staff">Staff Management</a></li>
+                        <li><a href="services.html#transportation">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</p>
+                        <p><i class="fas fa-phone"></i> +966 11 XXX XXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@moozen.sa</p>
+                        <p><i class="fas fa-clock"></i> 24/7 Support Available</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">&copy; 2024 MOOZEN Facilities Management. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

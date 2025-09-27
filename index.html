@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOOZEN - Leading facilities management company in Saudi Arabia providing comprehensive maintenance, operation, and hospitality services.">
+    <meta name="keywords" content="facilities management, Saudi Arabia, maintenance, operation, hospitality services, cleaning, staff management">
+    <title>MOOZEN - Excellence in Facilities Management | Saudi Arabia</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">Mozoon</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section parallax-hero hero-slider">
+        <!-- Background Image Slider -->
+        <div class="hero-background-slider">
+            <div class="hero-slide active" data-bg="photovoltaics-factory-manager-looking-paperwork-documents.jpg">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="hero-slide" data-bg="person-white-chemical-protection-suit-doing-disinfection-public-areas-stop-spreading-highly-contagious-corona-virus.jpg">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="hero-slide" data-bg="human-hand-passing-gear-robotic-hand.jpg">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <canvas id="particle-network-canvas" class="particle-network-canvas"></canvas>
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+        </div>
+        <div class="hero-geometric-shapes">
+            <div class="shape shape-circle-1"></div>
+            <div class="shape shape-circle-2"></div>
+            <div class="shape shape-triangle-1"></div>
+            <div class="shape shape-triangle-2"></div>
+            <div class="shape shape-square-1"></div>
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 col-md-8">
+                    <div class="hero-content-left">
+                        <!-- Dynamic slide text -->
+                        <div class="hero-slide-text">
+                            <div class="slide-text" data-slide="0">
+                                <h1 class="hero-title typewriter-text">Comprehensive Facilities Management</h1>
+                                <div class="hero-subtitle fade-in-up">
+                                    <p class="lead-text mb-3"><strong>MOOZEN</strong> delivers complete facilities management solutions for commercial, industrial, and residential properties</p>
+                                    <div class="key-benefits">
+                                        <div class="benefit-highlight">
+                                            <i class="fas fa-check-circle text-warning me-2"></i>
+                                            <span>24/7 Maintenance Services</span>
+                                        </div>
+                                        <div class="benefit-highlight">
+                                            <i class="fas fa-check-circle text-warning me-2"></i>
+                                            <span>Professional Workforce Management</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-text" data-slide="1">
+                                <h1 class="hero-title typewriter-text">Premium Cleaning & Sanitization</h1>
+                                <p class="hero-subtitle fade-in-up">Maintaining the highest hygiene standards with advanced cleaning protocols and professional disinfection services for all types of facilities and environments.</p>
+                            </div>
+                            <div class="slide-text" data-slide="2">
+                                <h1 class="hero-title typewriter-text">Smart Operations & Technology</h1>
+                                <p class="hero-subtitle fade-in-up">Integrating cutting-edge technology with experienced professionals to deliver efficient, cost-effective facility management solutions that exceed expectations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons fade-in-up">
+                            <a href="services.html" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-cogs me-2"></i>Our Services
+                            </a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-phone me-2"></i>Get Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 d-none d-md-block">
+                    <!-- This column will show the background images -->
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Our Core Services</h2>
+                    <p class="section-subtitle">Comprehensive facilities management solutions tailored to your needs</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Operation & Maintenance</h4>
+                        <p>Complete electrical, plumbing, HVAC, and fire systems maintenance services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h4>Hospitality Services</h4>
+                        <p>Professional guest relations, event management, and catering services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h4>Cleaning Services</h4>
+                        <p>Commercial, industrial, and specialized cleaning solutions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Staff Management</h4>
+                        <p>HR services, training programs, and workforce optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us py-5" id="why-choose-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="why-content">
+                        <h2 class="section-title animate-title">Why Choose MOOZEN?</h2>
+                        <p class="section-subtitle animate-subtitle">Your trusted partner for comprehensive facilities management solutions</p>
+                        
+                        <div class="benefit-item animate-benefit" data-delay="0.2">
+                            <div class="benefit-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h5 class="highlight-text">Proven Excellence</h5>
+                                <p>Years of experience serving diverse industries across Saudi Arabia with exceptional results.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item animate-benefit" data-delay="0.4">
+                            <div class="benefit-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h5 class="highlight-text">Quality Assurance</h5>
+                                <p>Certified processes and compliance with international standards for all our services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item animate-benefit" data-delay="0.6">
+                            <div class="benefit-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h5 class="highlight-text">24/7 Support</h5>
+                                <p>Round-the-clock availability for emergency services and ongoing support.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item animate-benefit" data-delay="0.8">
+                            <div class="benefit-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h5 class="highlight-text">Trusted Partnership</h5>
+                                <p>Long-term relationships built on reliability, transparency, and exceptional service delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-image animate-image">
+                        <img src="team.jpg" alt="Professional Team" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Statistics -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="cta-title">Ready to Experience Excellence?</h2>
+                    <p class="cta-subtitle">Contact us today for a comprehensive facilities management solution tailored to your needs.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">Get Started</a>
+                        <a href="tel:+966123456789" class="btn btn-outline-primary btn-lg">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <img src="logo mozoon.svg" alt="MOOZEN Logo" class="footer-logo">
+                        <p>Leading facilities management company in Saudi Arabia, providing comprehensive solutions for operation, maintenance, and hospitality services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Operation & Maintenance</a></li>
+                        <li><a href="services.html">Hospitality Services</a></li>
+                        <li><a href="services.html">Cleaning Services</a></li>
+                        <li><a href="services.html">Staff Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="footer-title">Contact Info</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope me-2"></i> info@mozoon.sa</p>
+                        <p><i class="fas fa-phone me-2"></i> +966 11 123 4567</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Riyadh, Saudi Arabia</p>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">&copy; 2024 MOOZEN. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
