@@ -1048,14 +1048,14 @@ document.head.appendChild(styleSheet);
 class LanguagePreference {
     constructor() {
         this.languageMap = {
-            index: { en: 'index.html', ar: 'index-ar.html' },
+            index: { en: 'index-ar.html', ar: 'index.html' },
             services: { en: 'services.html', ar: 'services-ar.html' },
             about: { en: 'about.html', ar: 'about-ar.html' },
             clients: { en: 'clients.html', ar: 'clients-ar.html' },
             contact: { en: 'contact.html', ar: 'contact-ar.html' }
         };
 
-        this.defaultPage = 'index.html';
+        this.defaultPage = 'index.html'; // Now contains Arabic content
     }
 
     init() {
@@ -1080,6 +1080,14 @@ class LanguagePreference {
     }
 
     detectLanguage(path) {
+        // Special case for index files after content swap
+        if (path === 'index.html') {
+            return 'ar'; // index.html now contains Arabic content
+        }
+        if (path === 'index-ar.html') {
+            return 'en'; // index-ar.html now contains English content
+        }
+        // For other pages, maintain original logic
         return path.includes('-ar.html') ? 'ar' : 'en';
     }
 
