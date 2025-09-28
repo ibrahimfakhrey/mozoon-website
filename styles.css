@@ -2672,3 +2672,100 @@ body[dir="rtl"] .social-links {
         justify-content: center;
     }
 }
+
+/* Client Carousel Styles - Horizontal Layout */
+.client-carousel-horizontal {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    height: 200px; /* Fixed height for horizontal carousel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-track-horizontal {
+    display: flex;
+    flex-direction: row;
+    animation: slideHorizontal 30s linear infinite;
+    width: calc(250px * 15); /* 15 slides * 250px width */
+    height: 100%;
+}
+
+.carousel-slide-horizontal {
+    flex: 0 0 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 0 1rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide-horizontal img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(80%) opacity(0.6);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide-horizontal:hover {
+    transform: scale(1.05);
+}
+
+.carousel-slide-horizontal:hover img {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+@keyframes slideHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move by half the track width for seamless loop */
+    }
+}
+
+/* Pause animation on hover */
+.client-carousel-horizontal:hover .carousel-track-horizontal {
+    animation-play-state: paused;
+}
+
+/* Responsive horizontal carousel */
+@media (max-width: 768px) {
+    .client-carousel-horizontal {
+        height: 150px;
+        padding: 1rem;
+    }
+    
+    .carousel-slide-horizontal {
+        flex: 0 0 200px;
+        margin: 0 0.5rem;
+        padding: 1rem;
+    }
+    
+    .carousel-track-horizontal {
+        width: calc(200px * 15);
+    }
+}
+
+@media (max-width: 480px) {
+    .client-carousel-horizontal {
+        height: 120px;
+        padding: 0.5rem;
+    }
+    
+    .carousel-slide-horizontal {
+        flex: 0 0 150px;
+        margin: 0 0.25rem;
+        padding: 0.5rem;
+    }
+    
+    .carousel-track-horizontal {
+        width: calc(150px * 15);
+    }
+}
