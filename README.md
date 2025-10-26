@@ -5,20 +5,21 @@ A modern, responsive website for Mozoon facilities management company featuring:
 ## Features
 - **Responsive Design**: Works perfectly on all devices
 - **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: 
+- **Interactive Elements**:
   - Random services gallery with sequential display
   - Smooth scrolling navigation
   - Animated counters and progress bars
   - Contact form with validation
 - **Performance Optimized**: Fast loading with lazy image loading
 - **SEO Friendly**: Proper meta tags and semantic HTML
+- **Bilingual Experience**: Full English and Arabic site variants with a persistent language preference toggle
 
 ## Pages
-- **Home**: Hero section with company overview
-- **Services**: Comprehensive services with interactive image gallery
-- **About**: Company information and team details
-- **Clients**: Client testimonials and partnerships
-- **Contact**: Contact form and location information
+- **Home**: Hero section with company overview (`index.html`, `index-ar.html`)
+- **Services**: Comprehensive services with interactive image gallery (`services.html`, `services-ar.html`)
+- **About**: Company information and team details (`about.html`, `about-ar.html`)
+- **Clients**: Client testimonials and partnerships (`clients.html`, `clients-ar.html`)
+- **Contact**: Contact form and location information (`contact.html`, `contact-ar.html`)
 
 ## Technologies Used
 - HTML5
@@ -26,7 +27,7 @@ A modern, responsive website for Mozoon facilities management company featuring:
 - JavaScript (ES6+)
 - Bootstrap 5
 - Font Awesome Icons
-- Google Fonts (Inter & Poppins)
+- Google Fonts (Inter, Poppins, Tajawal)
 
 ## Deployment Options
 
@@ -49,15 +50,20 @@ A modern, responsive website for Mozoon facilities management company featuring:
 
 ## File Structure
 ```
-├── index.html          # Homepage
-├── services.html       # Services page with image gallery
-├── about.html          # About page
-├── clients.html        # Clients page
-├── contact.html        # Contact page
-├── styles.css          # Main stylesheet
-├── script.js           # JavaScript functionality
-├── services/           # Service images (1.jpg - 12.jpg)
-└── *.jpg              # Other images and assets
+├── index.html           # English homepage
+├── index-ar.html        # Arabic homepage (RTL)
+├── services.html        # English services page with image gallery
+├── services-ar.html     # Arabic services page with image gallery
+├── about.html           # English about page
+├── about-ar.html        # Arabic about page
+├── clients.html         # English clients page
+├── clients-ar.html      # Arabic clients page
+├── contact.html         # English contact page
+├── contact-ar.html      # Arabic contact page
+├── styles.css           # Main stylesheet with RTL support
+├── script.js            # JavaScript functionality and language preference manager
+├── services/            # Service images (1.jpg - 12.jpg)
+└── *.jpg                # Other images and assets
 ```
 
 ## Local Development

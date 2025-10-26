@@ -1044,6 +1044,103 @@ const styleSheet = document.createElement('style');
 styleSheet.textContent = dynamicStyles;
 document.head.appendChild(styleSheet);
 
+// Language preference manager
+class LanguagePreference {
+    constructor() {
+        this.languageMap = {
+            index: { en: 'index-ar.html', ar: 'index.html' },
+            services: { en: 'services.html', ar: 'services-ar.html' },
+            about: { en: 'about.html', ar: 'about-ar.html' },
+            clients: { en: 'clients.html', ar: 'clients-ar.html' },
+            contact: { en: 'contact.html', ar: 'contact-ar.html' }
+        };
+
+        this.defaultPage = 'index.html'; // Now contains Arabic content
+    }
+
+    init() {
+        if (typeof window === 'undefined') return;
+
+        const currentPath = window.location.pathname.split('/').pop() || this.defaultPage;
+        const currentLanguage = this.detectLanguage(currentPath);
+        const normalizedKey = this.normalizeKey(currentPath);
+        const storedPreference = this.getStoredPreference();
+
+        if (!storedPreference) {
+            this.storePreference(currentLanguage);
+        } else if (storedPreference !== currentLanguage) {
+            const targetPage = this.getTargetPage(normalizedKey, storedPreference);
+            if (targetPage && targetPage !== currentPath) {
+                window.location.href = this.buildTargetUrl(targetPage);
+                return;
+            }
+        }
+
+        this.bindToggleHandlers();
+    }
+
+    detectLanguage(path) {
+        // Special case for index files after content swap
+        if (path === 'index.html') {
+            return 'ar'; // index.html now contains Arabic content
+        }
+        if (path === 'index-ar.html') {
+            return 'en'; // index-ar.html now contains English content
+        }
+        // For other pages, maintain original logic
+        return path.includes('-ar.html') ? 'ar' : 'en';
+    }
+
+    normalizeKey(path) {
+        const fileName = path.replace('.html', '');
+        return fileName.endsWith('-ar') ? fileName.replace('-ar', '') : fileName;
+    }
+
+    getTargetPage(key, language) {
+        return this.languageMap[key]?.[language] || null;
+    }
+
+    buildTargetUrl(targetPage) {
+        const segments = window.location.pathname.split('/');
+        segments[segments.length - 1] = targetPage;
+        return segments.join('/');
+    }
+
+    getStoredPreference() {
+        try {
+            return localStorage.getItem('preferredLanguage');
+        } catch (error) {
+            return null;
+        }
+    }
+
+    storePreference(language) {
+        try {
+            localStorage.setItem('preferredLanguage', language);
+        } catch (error) {
+            // Ignore storage errors (e.g., privacy mode)
+        }
+    }
+
+    bindToggleHandlers() {
+        const toggles = document.querySelectorAll('.language-switch');
+        if (toggles.length === 0) return;
+
+        toggles.forEach((toggle) => {
+            toggle.addEventListener('click', () => {
+                const targetLanguage = toggle.dataset.language;
+                if (targetLanguage) {
+                    this.storePreference(targetLanguage);
+                }
+            });
+        });
+    }
+}
+
+// Initialize language preference manager immediately after definition
+const languagePreference = new LanguagePreference();
+languagePreference.init();
+
 // Random Services Gallery Class
 class RandomServicesGallery {
     constructor() {
